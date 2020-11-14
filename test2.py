@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    numbers = [[random.randrange(4) for i in range(16)] for j in range(16)]
+    numbers = [[random.randrange(4) for i in range(8)] for j in range(8)]
     return render_template("index.html", numbers = numbers)
 
 @app.route('/about')
