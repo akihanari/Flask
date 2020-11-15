@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 import random
-import PIL.Image
-import PIL.ImageDraw
-import PIL.ImageFont
+from PIL import Image, ImageFilter
 app = Flask(__name__)
 
 @app.route('/')
