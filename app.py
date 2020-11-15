@@ -11,7 +11,7 @@ def hello_world():
     return render_template("index.html", numbers = numbers)
 
 @app.route('/about')
-    def This_is():
+def This_is():
         # 使うフォント，サイズ，描くテキストの設定
     ttfontname = "C:\\Windows\\Fonts\\meiryob.ttc"
     fontsize = 12
@@ -31,9 +31,8 @@ def hello_world():
     textWidth, textHeight = draw.textsize(text,font=font)
     textTopLeft = (canvasSize[0]//6, canvasSize[1]//2-textHeight//2) # 前から1/6，上下中央に配置
     draw.text(textTopLeft, text, fill=textRGB, font=font)
-
-    
-    return img.save("image.png")
+    testimage = img.save("image.png")
+    return render_template("about.html", testimage=testimage)
 
 if __name__ == '__main__':
     app.run()

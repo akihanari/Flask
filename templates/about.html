@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+  {% block content %}
+    <h1>Pixel art generator</h1>
+    <div class="spaces">
+      <<img src="{{testimage}}" alt="restimage">
+  </div>
+  <p>
+    <a class="btn btn-primary" href="/" role="button">ランダム生成</a>
+  </p>
+  <br>
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+  class="twitter-share-button" data-show-count="false"　data-text="ドット絵ジェネレータ">Share</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+  </script>
+{% endblock %}
