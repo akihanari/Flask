@@ -9,10 +9,6 @@ def hello_world():
     return render_template("index.html", numbers = numbers)
 
 @app.route('/about')
-W = 28
-H = 28
-
-
 def num_to_english(x):
     """ 数字の英語文字列を返す """
     assert 0 <= x <= 9, "Input int x (0 <= x <= 9)"
@@ -20,6 +16,8 @@ def num_to_english(x):
 
 
 def make_image(idx, font_name):
+    W = 28
+    H = 28
     """ フォントを指定して 0-9 の画像ファイルを作る """
     fnt = ImageFont.truetype("C:/Windows/Fonts/BAUHS93.TTF".format(font_name), 25)
     for i in range(10):
