@@ -14,7 +14,7 @@ def This_is():
     testimage = Image.open(testimage_path).copy()
 
     position = ("50", "50")
-    font = ImageFont.truetype("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap", 12px)
+    font = ImageFont.truetype("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap", 12)
     draw = ImageDraw.Draw(testimage)
 
     draw.text(position, "■", "000000", font=font)
