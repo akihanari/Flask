@@ -17,7 +17,7 @@ def This_is():
     draw.ellipse((250, 300, 450, 400), fill=(0, 0, 255))
     font = ImageFont.truetype('/Library/Fonts/Arial Bold.ttf', 48)
     draw.multiline_text((0, 0), 'Pillow sample', fill=(0, 0, 0), font=font)
-    testimage = im.save('data/dst/pillow_iamge_draw.jpg', quality=95)
+    testimage = im.show('data/dst/pillow_iamge_draw.jpg', quality=95)
     return render_template("about.html", testimage=testimage)
 
 if __name__ == '__main__':
