@@ -42,7 +42,7 @@ def hello_world():
 @app.route("/pixelart")
 def pixel():
     numbers = [[random.randrange(4) for i in range(8)] for j in range(8)]
-    return render_template("pixelart", numbers = numbers)
+    return render_template("pixelart.html", numbers = numbers)
 
 # @app.route("/bbs")
 # def bbs():
