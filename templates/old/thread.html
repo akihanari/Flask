@@ -1,0 +1,53 @@
+      {% extends "layout.html" %}
+      {% block content %}
+        <h1>bbs</h1>
+
+        <form action="/result" method="post">
+    <input type="hidden" name="thread" value="{{ thread }}">
+    <label for="article">投稿</label>
+    <!-- <input type="text" name="article"> -->
+    <textarea name="article" rows="6" cols="100"></textarea>
+    <p></p>
+    <label for="name">名前</label>
+    <input type="text" name="name">
+    <button type="submit">送信する</button>
+</form>
+
+<h2>投稿一覧 {{ thread }}</h2>
+
+    <table class="table">
+    <thead class="thead-dark">
+        <tr>
+        <th>日付</th>
+        <th>名前</th>
+        <th>投稿</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for f in articles: %}
+            <tr>
+                <th scope="row">{{ f.pub_date }}</th>
+                <td>{{ f.name }}</td>
+                <td>{{ f.article }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+<form action="/" method="get">
+    <button type="submit">戻る</button>
+</form>
+
+      <br>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+      class="twitter-share-button" data-show-count="false"　data-text="ドット絵ジェネレータ">Share</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+      </script>
+      <br>
+      <div class="card" style="max-width: 15rem;">
+      <div class="card-header">更新情報</div>
+      <div class="card-body">
+            <p class="card-text">2020/11/15 サイト開設</p>
+          </div>
+        </div>
+    {% endblock %}
