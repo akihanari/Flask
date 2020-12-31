@@ -44,6 +44,14 @@ def pixel():
     numbers = [[random.randrange(4) for i in range(8)] for j in range(8)]
     return render_template("pixelart.html", numbers = numbers)
 
+@app.route('/p5js1')
+def hello_world():
+    return render_template("p5js1.html")
+
+@app.route('/p5js2')
+def hello_world():
+    return render_template("p5js2.html")
+
 # @app.route("/bbs")
 # def bbs():
 #     threads = Thread.query.all()
