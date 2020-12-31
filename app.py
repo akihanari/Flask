@@ -45,11 +45,11 @@ def pixel():
     return render_template("pixelart.html", numbers = numbers)
 
 @app.route('/p5js1')
-def hello_world():
+def p5js1():
     return render_template("p5js1.html")
 
 @app.route('/p5js2')
-def hello_world():
+def p5js2():
     return render_template("p5js2.html")
 
 # @app.route("/bbs")
