@@ -44,6 +44,10 @@ def pixel():
     numbers = [[random.randrange(4) for i in range(8)] for j in range(8)]
     return render_template("pixelart.html", numbers = numbers)
 
+@app.route('/p5js')
+def p5js():
+    return render_template("p5js.html")
+
 @app.route('/p5js1')
 def p5js1():
     return render_template("p5js1.html")
