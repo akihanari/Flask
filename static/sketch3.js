@@ -6,8 +6,8 @@ var shapes = [];
 
 function setup() {
   createCanvas(720, 400);
-  img = loadImage("https://flaskandheroku.herokuapp.com/p5js3/assets/bg_chiheisen_green.jpg");  // Load the image
-  img2 = loadImage("https://flaskandheroku.herokuapp.com/p5js3/assets/animal_alpaca_huacaya.png");
+  img = loadImage("https://flaskandheroku.herokuapp.com/static/assets/bg_chiheisen_green.jpg");  // Load the image
+  img2 = loadImage("https://flaskandheroku.herokuapp.com/static/assets/animal_alpaca_huacaya.png");
 
   shapes.push(new Shape(-r/2, height/2 + 10, true, 1));
   shapes.push(new Shape(0, height/2 + 10, false, 0));
