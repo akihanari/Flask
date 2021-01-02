@@ -60,6 +60,10 @@ def p5js2():
 def p5js3():
     return render_template("p5js3.html")
 
+@app.route('/assets')
+def assets():
+    return render_template("assets")
+
 # @app.route("/bbs")
 # def bbs():
 #     threads = Thread.query.all()
