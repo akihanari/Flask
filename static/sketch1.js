@@ -1,5 +1,4 @@
 function setup() {
-    // createCanvas(600, 200);
     createCanvas(windowWidth, windowHeight);
     noStroke();
     fill(255);
@@ -16,7 +15,6 @@ function setup() {
         const d = dist(x, y, mouseX, mouseY);
         const size = map(sin(d * 0.05), -1, 1, 0, 45);
         fill(map(sin(d * 0.05), -1, 1, 60, 320), 100, 100);
-        // rect(x, y, size, size);
         triangle(x, y, (size - x)/2, y + 5, size, size);
       }
     }
