@@ -60,9 +60,9 @@ def p5js2():
 def p5js3():
     return render_template("p5js3.html")
 
-@app.route('/static/assets')
-def assets():
-    return render_template("/static/assets")
+# @app.route('/static/assets')
+# def assets():
+#     return render_template("/static/assets")
 
 # @app.route("/bbs")
 # def bbs():
