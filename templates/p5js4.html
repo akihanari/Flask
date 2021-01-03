@@ -13,8 +13,8 @@ function setup() {
   createCanvas(720, 400);
   fill(240);
   noStroke();
-  bg = loadImage("data/bg_snow_jutaku.jpg");
-  img = loadImage("data/kids_hashirimawaru_snow.png");
+  bg = loadImage("{{url_for('static', filename='bg_snow_jutaku.jpg')}}");
+  img = loadImage("{{url_for('static', filename='kids_hashirimawaru_snow.png')}}");
 }
 
 function draw() {
