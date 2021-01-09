@@ -30,7 +30,6 @@ function Shape(tmpX, tmpY, tmpFlag, tmpNextIndex) {
     if (!this.moveFlag) {
       return;
     }
-
     image(img2, this.x, this.y, r, r);
     this.x -= xSpeed;
 
