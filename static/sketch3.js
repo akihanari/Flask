@@ -32,7 +32,6 @@ function Shape(tmpX, tmpY, tmpFlag, tmpNextIndex) {
     }
 
     image(img2, this.x, this.y, r, r);
-
     this.x -= xSpeed;
 
     if (this.x < width - r/2) {
