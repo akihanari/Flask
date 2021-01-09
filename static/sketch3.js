@@ -11,7 +11,6 @@ function setup() {
 
   shapes.push(new Shape(-r/2, height/2 + 10, true, 1));
   shapes.push(new Shape(0, height/2 + 10, false, 0));
-
 }
 
 function draw() {
