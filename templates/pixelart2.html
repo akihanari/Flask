@@ -2,7 +2,7 @@
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
 <!-- <script src="../static/pixelart2.js"></script> -->
-  <h1>Pixel art generator</h1>
+  <h1>Pixel art generator2</h1>
   <!-- <div id="P5Canvas">
 </div> -->
 <script>
@@ -18,7 +18,17 @@
     for (k = 0; k < 8; k++) 0 == a[k] ? fill(random(255), 200, 200) : fill("#ededed"), rect(1 + 25 * k, 1 + 25 * m, 25, 25);
     a.splice(0, 8)
   }
+  button = createButton("Save");
+  button.style("width", "50px");
+  button.style("height", "50px");
+  button.style("border-radius", "5px");
+  button.style("color", "#ffffff");
+  button.style("background", "#00ce14");
+  button.mousePressed(saveme);
 }, draw = () => {};
+function saveme() {
+    saveCanvas('pixelart');
+}
 </script>
 <p>
   <a class="btn btn-success" href="https://flaskandheroku.herokuapp.com/pixelart2" role="button">ランダム生成</a>
