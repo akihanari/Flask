@@ -1,4 +1,4 @@
-<script>
+
     let canvas;
     setup = () => {
   canvas = createCanvas(202, 202), background(210);
@@ -11,4 +11,3 @@
     a.splice(0, 8)
   }
 }, draw = () => {};
-    </script>
