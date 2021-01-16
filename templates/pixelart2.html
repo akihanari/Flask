@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
 <!-- <script src="../static/pixelart2.js"></script> -->
   <h1>Pixel art generator2</h1>
   <!-- <div id="P5Canvas">
@@ -8,6 +9,7 @@
 <script>
 
     // let canvas;
+    let button;
     setup = () => {
   createCanvas(202, 202), background(210);
 //   canvas.parent("P5canvas");
