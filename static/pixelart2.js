@@ -1,8 +1,8 @@
 
-    let canvas;
+    // let canvas;
     setup = () => {
-  canvas = createCanvas(202, 202), background(210);
-  canvas.parent("P5canvas");
+  createCanvas(202, 202), background(210);
+//   canvas.parent("P5canvas");
   var r = [0, 1, 2, 3],
     a = [];
   for (j = 0; j < 64; j++) a.push(random(r));
