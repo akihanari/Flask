@@ -9,7 +9,7 @@
 <script>
 
     // let canvas;
-    let button;
+    let button,button2,button3;
     setup = () => {
   createCanvas(202, 202), background(210);
 //   canvas.parent("P5canvas");
@@ -27,18 +27,41 @@
   button.style("color", "#ffffff");
   button.style("background", "#00ce14");
   button.mousePressed(saveme);
+
+  button2 = createButton("Tweet");
+  button2.style("width", "50px");
+  button2.style("height", "50px");
+  button2.style("border-radius", "5px");
+  button2.style("color", "#ffffff");
+  button2.style("background", "#00acee");
+  button2.mousePressed(tweetme);
+
+  button3 = createButton("Clear");
+  button3.style("width", "50px");
+  button3.style("height", "50px");
+  button3.style("border-radius", "5px");
+  button3.style("color", "#ffffff");
+  button3.style("background", "#cc0000");
+  button3.mousePressed(clearme);
 }, draw = () => {};
 function saveme() {
     saveCanvas('pixelart');
 }
+function tweetme() {
+  link("https://twitter.com/share?ref_src=twsrc%5Etfw");
+}
+
+function clearme() {
+  link("pixelart2.html");
+}
 </script>
-<p>
+<!-- <p>
   <a class="btn btn-success" href="https://flaskandheroku.herokuapp.com/pixelart2" role="button">ランダム生成</a>
 </p>
 <br>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-class="twitter-share-button" data-show-count="false"　data-text="ドット絵ジェネレータ">Share</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-</script>
+class="twitter-share-button" data-show-count="false"　data-text="ドット絵ジェネレータ">Share</a> -->
+<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+</script> -->
 <h4><a href="https://flaskandheroku.herokuapp.com/">▶Home</a></h4>
 {% endblock %}
