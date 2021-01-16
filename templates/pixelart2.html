@@ -2,10 +2,10 @@
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
   <h1>Pixel art generator</h1>
-  <div class="spaces">
+  <div id="P5Canvas">
     <script>
       setup = () => {
-  createCanvas(202, 202), background(210);
+  let P5Canvas = createCanvas(202, 202), background(210);
   var r = [0, 1, 2, 3],
     a = [];
   for (j = 0; j < 64; j++) a.push(random(r));
